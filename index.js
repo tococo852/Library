@@ -11,3 +11,12 @@ Book.prototype.info= function(){
     console.log(`${this.title} by ${this.author}, ${this.pages} pages, ${this.readed? 'Readed':'Not Readed'}`)
 
 }
+
+const library=[];
+
+function addBookToLibrary(title,author,pages,readed){
+    newBook= new Book(title,author, pages, readed);
+    library.push(newBook);
+
+}
+
