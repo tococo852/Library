@@ -58,3 +58,19 @@
   .element {
     font-family: var(--system-ui);
   }
+
+  input {
+    border: 1px solid #2e2e2e;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+
+  }
+
+  input:invalid {
+    border-color: rgba(248, 42, 42, 0.699);
+  }
+  input:focus{
+    border-color: rgba(8, 63, 126, 0.685);
+  }
