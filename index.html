@@ -11,9 +11,9 @@
 
     <div class="header">
         <div class="logo">The Library</div>
-        <button class="create">Add A book</button>
+        <button onclick="toggleForm()" class="create" id="createButton">Add a Book</button>
     </div>
-    <div class="createWindow">
+    <div class="createWindow" id="formWindow">
         <form action="" id="bookForm">
             <label for="bookName">
                 bookName:
@@ -47,8 +47,18 @@
         </form>
 
     </div>
-    <div class="container">cards Here
-        <div class="card">demo of card to get css done</div>
+    <div class="cardContainer">
+        <div class="card">
+            <div class="bookTitle">title example</div>
+            <div class="bookAuthor">Author Example</div>
+            <div class="bookPages">293</div>
+            <div class="bookStatus">
+                <label for="book"> finish read?</label>
+                <input type="checkbox"  name="book" value="true" checked="false">
+            </div>
+        </div>
+
+        
     </div>
     
 </body>
