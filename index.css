@@ -98,6 +98,12 @@
   grid-area: 2/1/3/3;
 }
 
+.deleteButton{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-style: solid;
+}
 #formWindow{
   display:none;
 }

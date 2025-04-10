@@ -42,6 +42,10 @@ function createCard(book){
     //card container
     card= document.createElement('div');
     card.setAttribute('class', 'card');
+    //delete button
+    deleteButton=document.createElement('button');
+    deleteButton.setAttribute('class', "deleteButton")
+    deleteButton.innerText='Delete'
     //title
     title=document.createElement('div');
     title.setAttribute('class', 'bookTitle');
@@ -75,7 +79,7 @@ function createCard(book){
 
     //merging everything
 
-    card.append(title,author,pages,stat);
+    card.append(deleteButton,title,author,pages,stat);
 
     //adding card to container
 
@@ -99,6 +103,16 @@ function toggleForm(){
 
 
 }
+function deleteCard(){
+    console.log(this)
+}
+
+document.getElementById('cardMain').addEventListener('click',function (e){
+    if(e.target.className=="deleteButton"){
+        e.target.closest('.card').remove();
+
+    }
+});
 var form = document.getElementById("bookForm");
 function handleForm(event) { 
     event.preventDefault(); 
